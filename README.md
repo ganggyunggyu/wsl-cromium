@@ -9,6 +9,8 @@ sudo apt install -y libasound2t64 libnss3 libatk-bridge2.0-0t64 libatk1.0-0t64 l
 rm -rf .venv
 source .venv/bin/activate
 
+python -m playwright install --with-deps  # 리눅스 의존성까지 설치
+
 pip uninstall playwright -y
 pip install playwright
 ```
